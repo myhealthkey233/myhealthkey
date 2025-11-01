@@ -1,9 +1,13 @@
 services:
-  - type: static_site
+  - type: static
     name: myhealthkey
-    buildCommand: npm install && npm run build
-    publishDir: dist
+    env: static
+    buildCommand: npm ci || npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: RENDER_NODE_VERSION
+        value: "18"
     routes:
       - type: rewrite
-        source: /*
+        source: /.*
         destination: /index.html
