@@ -1,0 +1,15 @@
+{
+  "short_name": "MyHealthKey",
+  "name": "MyHealthKey - Patient Data Protection",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb"
+}
